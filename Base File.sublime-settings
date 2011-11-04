@@ -28,6 +28,7 @@
     */
     "sublimelinter_executable_map":
     {
+        "puppet": "/usr/bin/puppet"
     },
 
     /*
