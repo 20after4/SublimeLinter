@@ -108,7 +108,7 @@ def add_lint_marks(view, lines, error_underlines, violation_underlines, warning_
         view.add_regions('lint-underline-illegal', error_underlines, 'invalid.illegal', sublime.DRAW_EMPTY_AS_OVERWRITE)
     if lines:
         fill_outlines = view.settings().get('sublimelinter_fill_outlines', False)
-        gutter_mark = 'cross' if view.settings().get('sublimelinter_gutter_marks', False) else ''
+        gutter_mark = 'dot' if view.settings().get('sublimelinter_gutter_marks', False) else ''
         outlines = {'warning': [], 'violation': [], 'illegal': []}
 
         for line in lines:
